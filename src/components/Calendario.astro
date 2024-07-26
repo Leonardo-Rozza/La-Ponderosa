@@ -1,0 +1,33 @@
+---
+// src/components/Calendario.astro
+import CalendarioReact from './CalendarioReact.tsx';
+
+const fechasOcupadas = ["2024-07-30", "2024-08-05", "2024-08-12"];
+---
+<section class="calendario" id="calendario">
+<h2 >Calendario</h2>
+<div class="calendar-container">
+  <CalendarioReact client:load ocupados={fechasOcupadas} />
+</div>
+</section>
+
+
+<style>
+  .calendario {
+    padding: 25px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .calendario h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #343a40;
+  }
+
+
+  .calendar-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+</style>

@@ -1,0 +1,73 @@
+.calendar-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fc-toolbar {
+  background-color: #133C55;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  padding: 10px;
+}
+
+.fc-daygrid-day-number {
+  color: #333;
+  font-weight: bold;
+}
+
+.fc-daygrid-event {
+  background-color: #dc3545;
+  border: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 10px;
+  }
+
+  .fc-toolbar {
+    padding: 5px;
+  }
+
+  .fc-button {
+    margin: 0 2px;
+    font-size: 0.9em;
+  }
+
+  .fc-daygrid-day-number {
+    font-size: 0.85em;
+  }
+
+  .fc-daygrid-event {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-container {
+    padding: 5px;
+  }
+
+  .fc-toolbar {
+    padding: 3px;
+    font-size: 0.85em;
+  }
+
+  .fc-button {
+    margin: 0 1px;
+    font-size: 0.8em;
+  }
+
+  .fc-daygrid-day-number {
+    font-size: 0.75em;
+  }
+
+  .fc-daygrid-event {
+    font-size: 0.7em;
+  }
+}
