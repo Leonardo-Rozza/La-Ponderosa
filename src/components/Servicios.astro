@@ -1,0 +1,64 @@
+---
+
+---
+
+<section id="servicios" class="servicios">
+  <h2>Nuestros Servicios</h2>
+  <article class="servicios-list">
+    <ul>
+      <li>Cocina industrial</li>
+      <li>Parrilla</li>
+      <li>Freezers</li>
+      <li>Juego de vajilla</li>
+      <li>Mesa de ping pong</li>
+      <li>Candy bar</li>
+    </ul>
+  </article>
+</section>
+
+<style>
+  /** Componente Servicios */
+
+  .servicios {
+    padding: 25px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .servicios h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #343a40;
+  }
+
+  .servicios-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .servicios-list li {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .servicios-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .servicios-list li h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #495057;
+  }
+</style>

@@ -43,7 +43,7 @@ const { title } = Astro.props;
       </section>
     </header>
 		<slot />
-    <script src="../../src/menu.ts"></script>
+    <script src="/src/components/carrousel-menu.ts"></script>
 	</body>
 </html>
 <style is:global>
@@ -54,7 +54,7 @@ const { title } = Astro.props;
   --third-color: #133C55;
   --link-color: #2e78b8;
   --font : "Raleway", sans-serif;
-  --max-width: 1200px;
+  --max-width: 1500px;
 }
 
 html{
@@ -73,6 +73,8 @@ html{
 body{
   margin: 0;
   overflow-x: hidden;
+  background-color: #f8f9fa;
+
 }
 
 img{

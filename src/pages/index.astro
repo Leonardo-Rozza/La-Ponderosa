@@ -1,14 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
+import Servicios from '../components/Servicios.astro';
+import Galeria from '../components/Galeria.astro';
+import ComoLlegar from '../components/Como-llegar.astro';
 ---
 
-<Layout title="La ponderosa">
-	<main>
+<Layout title="La Ponderosa">
     <Hero />
-	</main>
+  <main class="main-container">
+    <Servicios />
+    <Galeria />
+    <ComoLlegar />
+  </main>
 </Layout>
 
 <style>
-
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 </style>
