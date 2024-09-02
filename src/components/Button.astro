@@ -30,8 +30,26 @@
   font-weight: bold;
 }
 
+.whatsapp-button a:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del botón */
+  background-color: #20b557; /* Cambia ligeramente el color */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
 @media (max-width: 768px) {
-  
+  .whatsapp-button {
+    bottom: 80px; /* Ajusta esta distancia según sea necesario */
+    right: 20px;
+    z-index: 1001; /* Asegura que esté por encima del menú */
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-button {
+    bottom: 80px; /* Ajusta esta distancia según sea necesario */
+    right: 20px;
+    z-index: 1001; /* Asegura que esté por encima del menú */
+  }
 }
 
 
