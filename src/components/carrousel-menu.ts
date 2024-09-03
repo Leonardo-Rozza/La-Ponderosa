@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const $menuBtn = document.querySelector<HTMLButtonElement>(".menu-btn");
 const $menu = document.querySelector<HTMLElement>(".menu");
-const $whatsappButton = document.querySelector<HTMLElement>(".whatsapp-button");
+// const $whatsappButton = document.querySelector<HTMLElement>(".whatsapp-button");
 
 const $firstChild = $menuBtn?.firstElementChild as HTMLElement | null;
 const $lastChild = $menuBtn?.lastElementChild as HTMLElement | null;
@@ -53,7 +53,7 @@ $menuBtn?.addEventListener("click", (e: MouseEvent) => {
   $menu?.classList.toggle("is-active");
 
   // Ocultar o mostrar el botón de WhatsApp
-  $whatsappButton?.classList.toggle("hidden");
+  // $whatsappButton?.classList.toggle("hidden");
 });
 
 document.addEventListener("click", (e: MouseEvent) => {
