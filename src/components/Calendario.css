@@ -8,7 +8,7 @@
 }
 
 .fc-toolbar {
-  background-color: #133C55;
+  background-color: #133c55;
   color: #fff;
   border-radius: 8px 8px 0 0;
   padding: 10px;
@@ -28,46 +28,41 @@
 @media (max-width: 768px) {
   .calendar-container {
     padding: 10px;
+    max-width: 100%; /* Asegura que el ancho no exceda */
+    overflow: hidden; /* Elimina el scroll */
+    height: auto; /* Ajusta la altura automáticamente */
   }
 
-  .fc-toolbar {
-    padding: 5px;
-  }
-
-  .fc-button {
-    margin: 0 2px;
-    font-size: 0.9em;
-  }
-
-  .fc-daygrid-day-number {
-    font-size: 0.85em;
+  .fc {
+    font-size: 0.9em; /* Reduce el tamaño del texto en general */
   }
 
   .fc-daygrid-event {
-    font-size: 0.8em;
+    font-size: 0.75em; /* Reduce el tamaño del evento */
+  }
+
+  .fc-toolbar-title {
+    font-size: 1em; /* Ajusta el tamaño del título */
   }
 }
 
 @media (max-width: 480px) {
   .calendar-container {
     padding: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
   }
 
-  .fc-toolbar {
-    padding: 3px;
-    font-size: 0.85em;
-  }
-
-  .fc-button {
-    margin: 0 1px;
-    font-size: 0.8em;
-  }
-
-  .fc-daygrid-day-number {
-    font-size: 0.75em;
+  .fc {
+    font-size: 0.8em; /* Ajusta aún más para pantallas pequeñas */
   }
 
   .fc-daygrid-event {
-    font-size: 0.7em;
+    font-size: 0.65em; /* Más compacto */
+  }
+
+  .fc-toolbar-title {
+    font-size: 0.9em;
   }
 }

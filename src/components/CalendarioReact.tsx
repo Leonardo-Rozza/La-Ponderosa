@@ -24,10 +24,10 @@ const CalendarioReact: React.FC<CalendarioProps> = ({ ocupados }) => {
         buttonText={{
           today: "Hoy",
         }}
+        height={"auto"}
       />
     </div>
   );
 };
-
 
 export default CalendarioReact;
