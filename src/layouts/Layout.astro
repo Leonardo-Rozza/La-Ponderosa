@@ -15,7 +15,7 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>{title}</title>
     <link rel="icon" href="/La-Ponderosa/favicon-32x32.png" type="image/x-icon">
     
@@ -63,11 +63,11 @@ const { title } = Astro.props;
 <style is:global>
          /** Reset  */
 :root{
-  --first-color: #59A5D8;
-  --second-color: #042c52;
-  --third-color: #133C55;
-  --link-color: #2e78b8;
-  --font : "Raleway", sans-serif;
+  --first-color: #06b6d4;
+  --second-color: #0f172a;
+  --third-color: #1e293b;
+  --link-color: #0ea5e9;
+  --font : "Poppins", sans-serif;
   --max-width: 1500px;
 }
 
@@ -128,7 +128,7 @@ p{
 .menu{
   position: fixed;
   left: 0;
-  bottom: 64px; /**A la altura del Header */
+  top: 64px;
   width: 100%;
   background-color: var(--second-color);
   display: flex;
@@ -198,9 +198,9 @@ p{
 }
 
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   left: 0;
-  bottom: 0;
   z-index: 99;
   padding: 16px;
   width: 100%;
