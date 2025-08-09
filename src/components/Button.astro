@@ -41,7 +41,8 @@
 
 @media (max-width: 768px) {
   .whatsapp-button {
-    top: 70px; 
+    top: auto;
+    bottom: 40px; 
     right: 20px;
     z-index: 1000; 
   }
@@ -49,12 +50,21 @@
 
 @media (max-width: 480px) {
   .whatsapp-button {
-    top: 70px; 
+    top: auto;
+    bottom: 40px;
     right: 20px;
     z-index: 1000; 
   }
 }
 
+@media screen and (min-width:1024px) {
+  .header{
+    position: sticky;
+    bottom: 0;
+    padding: 8px;
+    height: 56px;
+  }
+}
 
 
 

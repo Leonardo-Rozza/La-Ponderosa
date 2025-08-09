@@ -52,17 +52,19 @@
   }
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .desktop-footer {
-    top: 70px; 
+    top: auto;
+    bottom: 40px; 
     left: 20px;
     z-index: 1001;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .desktop-footer {
-    top: 70px; 
+    top: auto; /* anula top */
+    bottom: 40px; /* deja espacio sobre el menú */
     left: 20px;
     z-index: 1001;
   }
